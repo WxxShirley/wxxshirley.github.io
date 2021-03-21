@@ -10,7 +10,7 @@
 <h3>微信小程序系列</h3>
 <ul>
   <li><a href="https://github.com/WxxShirley/wxxshirley.github.io/issues/1" target="_blank">微信小程序 - 后台CMS系统</a></li>
-  <li><a href="" target="_blank">微信小程序 - 发送订阅消息</a></li>
+  <li><a href="https://github.com/WxxShirley/wxxshirley.github.io/issues/2" target="_blank">微信小程序 - 发送订阅消息</a></li>
 </ul>
 
 
