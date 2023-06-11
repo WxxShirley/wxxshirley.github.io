@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-  background-image: url("../images//texture.jpeg");
+  background-image: url("../images/texture.jpeg");
   font-weight: 420;
   font-size: 1.5em;
   font-family: Georgia, serif;
@@ -12,6 +12,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 1080px;
   text-align: left;
   border-left: 2px solid #f1f1f1;
@@ -52,6 +53,7 @@ body {
   margin-bottom: 1%;
 }
 
+
 .img-embeded {
   width: 200;
   height: 150;
@@ -65,6 +67,29 @@ body {
   margin-top: 5px;
   box-shadow: 0px 2px 8px #aaa;
 }
+
+
+li.my_item{
+	position: relative;
+	clear: both;
+}
+
+
+li.my_item img{
+	float: left;
+	margin: 5px 10px 5px 5px;
+}
+
+.shadow {
+	-moz-box-shadow: 0px 2px 8px #aaa;
+	-webkit-box-shadow: 0px 2px 8px #aaa;
+	box-shadow: 0px 2px 8px #aaa;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#aaaaaa')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#aaaaaa');
+}
+
 
 
 button.button_pdf {
@@ -99,7 +124,7 @@ button.button_code {
 }
 
 button.button_video {
-  background-color: #f44336;
+  background-color: purple;
   border: none;
   color: white;
   padding: 1px 10px;
@@ -113,6 +138,8 @@ button.button_video {
   transition: 0.3s;
 }
 
+
+
 @media only screen and (max-width: 1000px) {
   .flex-col {
     display: none;
@@ -125,59 +152,7 @@ ul.my_table{
 	padding: 0 0 10px 15px;
 }
 
-li.my_item{
-	position: relative;
-	clear: both;
-}
 
-ul.my_detail{
-	margin: 0;
-	padding: 0 0 10px 15px;
-}
-
-li.my_item img{
-	float: left;
-	margin: 5px 10px 5px 5px;
-}
-
-li.my_item div{
-	padding:0;
-	margin: 0 0 0 125px;
-}
-
-li.my_item div p{
-	margin: 0;
-	padding: 5px 0 5px 0;
-}
-
-.shadow {
-	-moz-box-shadow: 0px 2px 8px #aaa;
-	-webkit-box-shadow: 0px 2px 8px #aaa;
-	box-shadow: 0px 2px 8px #aaa;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#aaaaaa')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#aaaaaa');
-}
-
-button.my_button {
-  padding: 0px 8px;
-  text-align: center;
-  background-color:white;
-  color: steelblue;
-  border: 1px solid steelblue;
-  border-radius:5px;
-  }
-button.my_button:hover {
-  background-color: steelblue;
-  color: white;
-  border: 1px solid white;
-}
-
-/*
-a{color:navy}
-a:hover{color:navy}
-*/
 
 .date {
   color:brown;
@@ -187,3 +162,4 @@ a:hover{color:navy}
 #main { 
   border-bottom: 1px solid #d9d9d9;
  }
+
