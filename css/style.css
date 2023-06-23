@@ -140,6 +140,22 @@ button.button_video {
 
 
 
+button.button_slides {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+
 @media only screen and (max-width: 1000px) {
   .flex-col {
     display: none;
