@@ -139,6 +139,21 @@ button.button_video {
 }
 
 
+button.button_project {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
 
 button.button_slides {
   background-color: red;
