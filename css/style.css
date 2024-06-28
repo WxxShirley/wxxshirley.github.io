@@ -68,6 +68,14 @@ body {
   box-shadow: 0px 2px 8px #aaa;
 }
 
+.img_research {
+  float: left;
+  width: 320px;
+  margin-left: 10px;
+  margin-top: 5px;
+  box-shadow: 0px 2px 8px #aaa;
+}
+
 
 li.my_item{
 	position: relative;
@@ -108,6 +116,37 @@ button.button_pdf {
  
 }
 
+.links a{
+  text-decoration: none;
+}
+
+.links a:hover{
+  text-decoration: underline;
+}
+
+.paper-link{
+  margin-right: 5px;
+  color: #4CAF50;
+}
+
+.code-link{
+  margin-right: 5px;
+  color: purple;
+}
+
+.title-link{
+  color: black
+}
+
+.slides-link{
+  margin-right: 5px;
+  color: orange
+}
+
+.video-link{
+  margin-right: 5px;
+  color: pink
+}
 
 button.button_code {
     background-color: orange;

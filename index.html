@@ -22,21 +22,21 @@
 		<div id="main">
 			<div class="row row-thin">
 				<div style="float:left;">
-					<span style="font-weight:400;font-size:50px">Xixi Wu </span><span style="font-size:28px; ">「吴茜茜」</span><br/>
+					<span style="font-weight:400;font-size:50px">Xixi WU </span><span style="font-size:28px; ">「吴茜茜」</span><br/>
 					<br/>
 					<span>Incoming Ph.D. student,</span><br/>
 					<span>The Chinese University of Hong Kong</span><br/>
 					<br/>
 
 					<span>
-						<a href="mailto:21210240043@m.fudan.edu.cn" class="my_link"><i class="fa fa-envelope"></i> Email</a> /
+						<a href="mailto:xxwu1120@gmail.com" class="my_link"><i class="fa fa-envelope"></i> Email</a> /
 						<a href="https://github.com/WxxShirley" class="my_link"><i class="fa fa-github"></i> GitHub</a> / 
 						<a href="https://scholar.google.com/citations?user=VDW27LgAAAAJ&hl=en" class="my_link"><i class="ai ai-google-scholar-square"></i> Google Scholar</a> 
 					</span><br/>
 
 				</div>
 				<div style="float:right">
-					<img src="images/me.jpeg" width="140" height="185" style="float:right;margin-top:0px;margin-bottom:0px"></img><br/>
+					<img src="images/me_new.jpg" width="140" height="185" style="float:right;margin-top:0px;margin-bottom:0px"></img><br/>
 				</div>
 			</div> <!-- class="row" -->
 			
@@ -50,18 +50,15 @@
 				<div class="col-md-12 text-left">
 					<h2>Short Bio</h2>
 					<p>
-						This is Xixi, currently pursuing my M.S. degree at Fudan University under the supervison of Prof. Yun Xiong. 
+						I am an incoming Ph.D. student at The Chinese University of Hong Kong under the supervison of <a href="https://www1.se.cuhk.edu.hk/~hcheng/">Prof. Hong CHENG</a>.
 						<br/>
-						Previously, I received my B.S. in Computer Science from Fudan University in 2021.
+						Previously, I received my B.S. and M.S. in Computer Science from <a href="https://www.fudan.edu.cn/en/">Fudan University</a> in 2021 and 2024, respectively.
+						<br/>
+						I was a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia (Shanghai)</a>, mentored by <a href="https://www.microsoft.com/en-us/research/people/yifeishen/">Dr. Yifei SHEN</a> and <a href="https://www.microsoft.com/en-us/research/people/caihuashan/">Dr. Caihua SHAN</a>.
 					</p>
 					<p>
-						My research interests lie in <strong>Deep Graph Learning and Data Mining</strong>. In particular, I am excited about the following topics:
-
-						<ul>
-							<li><strong>Graph Foundation Models:</strong> integrating <strong>LLMs</strong> and GNNs to realize a universal graph model, which can even exhibit zero-shot learning abilities.</li>
-							<li><strong>Graph Prompt Learning:</strong> enabling pre-trained graph models to adapt to diverse downstream tasks</li>
-							<li><strong>Other Data Mining Tasks:</strong> community detection, group representation learning, temporal interaction graph mining, etc.</li>
-						</ul>
+						My research interests lie in the intersection of <strong>Graph Learning and Large Language Models (LLMs)</strong>. Specifically, I focus on integrating Graph Learning with LLMs to enhance their reasoning capabilities in graph-related applications, such as task planning in autonomous agents. My ultimate research goal is to realize <strong>General Graph Intelligence</strong>.
+						Additionally, I am interested in Data Mining, with a focus on topics like community detection, graph prompt learning, and temporal interaction graph modeling.
 					</p>
 				</div>
 			</div>
@@ -69,89 +66,91 @@
 
 			<div class="row row-thin">
 				<div class="col-md-12 text-left">
-					<h2>Selected Publications</h2>
+					<h2>Research Highlights</h2>
 				</div>
 				<ul class="my_table">
 					<li class="my_item">
 						<div>
-							<div class="paper_badge">
-								&nbsp; &nbsp;Survey&nbsp; &nbsp;
-							</div>
-							<img src="images/paper/prompt_survey.jpg"" height="80" alt="generation" class="img_paper"/>
+							<img src="images/research/task_plan.jpg" height="180" alt="generation" class="img_research"/>
 						</div>
-						<strong>Graph Prompt Learning: A Comprehensive Survey and Beyond</strong><br/>
-						<span>Xiangguo Sun, Jiawen Zhang, <strong>Xixi Wu</strong>, Hong Cheng, Yun Xiong, and Jia Li</span><br/>
-						<em>arXiv preprint, 2023</em><br/>
-						<button class="button_pdf" onclick="location.href='https://arxiv.org/abs/2311.16534'">Paper</button>
-						<button class="button_code" onclick="location.href='https://github.com/WxxShirley/Awesome-Graph-Prompt'">Code</button>
-						<button class="button_project" onclick="location.href='https://github.com/sheldonresearch/ProG'">Project</button>
-						<img src="https://img.shields.io/github/stars/WxxShirley/Awesome-Graph-Prompt" style="float: left;"/>
-					</li><br/>
-					<li class="my_item">
-					    <div>
-							<div class="paper_badge">
-								KDD'2022
-							</div>
-							<img src="images/paper/kdd22clare.jpg"" height="90" alt="generation" class="img_paper"/>
+						<h4><strong>Graph Learning-enhanced Task Planning</strong></h4> 
+
+						Tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Task planning involves selecting a path within this graph to fulfill user requests. Our research analyzes how Transformer architectures and Auto-regressive losses affect LLMs' effectiveness on solving graph decision-making problems.
+                        We propose introducing GNN as a simple fix, offering both training-free and training-based variants. 
+					    
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" style="float:left;"/>
+						    <a href="https://arxiv.org/abs/2405.19119" class="paper-link">[Paper] </a> <a href="https://github.com/WxxShirley/GNN4TaskPlan" class="code-link"> [Code]</a>
 						</div>
-						<strong>CLARE: A Semi-supervised Community Detection Algorithm</strong><br/>
-						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, Caihua Shan, Yiheng Sun, Yangyong Zhu, and Philip S. Yu</span><br/>
-						<em>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2022</em><br/>
-						<button class="button_pdf" onclick="location.href='https://dl.acm.org/doi/abs/10.1145/3534678.3539370'">Paper</button>
-						<button class="button_code" onclick="location.href='https://github.com/FDUDSDE/KDD2022CLARE'">Code</button> 
-						<img src="https://img.shields.io/github/stars/FDUDSDE/KDD2022CLARE" style="float:left;"/>
-						<button class="button_video" onclick="location.href='https://bilibili.com/video/BV1As4y1C7mX'">Video</button>
-						<button class="button_slides" onclick="location.href='slides/KDD2022CLARE.pdf'">Slides</button>
 					</li><br/>
+
 					<li class="my_item">
 						<div>
-							<div class="paper_badge">
-								WWW'2023
-							</div>
-							<img src="images/paper/www23consrec.jpg"" height="90" alt="generation" class="img_paper"/>
+							<img src="images/research/graph_prompt.jpg" height="180" alt="generation" class="img_research"/>
 						</div>
-						<strong>ConsRec: Learning Consensus Behind Interactions for Group Recommendation</strong><br/>
-						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, Jiawei Zhang, Yangyong Zhu, and Philip S. Yu</span><br/>
-						<em>Proceedings of the ACM Web Conference (<strong>WWW</strong>), 2023</em><br/>
-						<button class="button_pdf" onclick="location.href='https://arxiv.org/abs/2302.03555'">Paper</button>
-						<button class="button_code" onclick="location.href='https://github.com/FDUDSDE/WWW2023ConsRec'">Code</button>
-						<img src="https://img.shields.io/github/stars/FDUDSDE/WWW2023ConsRec" style="float:left;"/>
-						<button class="button_video" onclick="location.href='https://www.bilibili.com/video/BV1ZP411v7fu'">Video</button>
-						<button class="button_slides" onclick="location.href='slides/WWW2023ConsRec.pdf'">Slides</button>
-					</li><br/>
-				
+						<h4><strong>Graph Prompt Learning</strong></h4> 
+
+						Graph Prompt Learning (GPL) focuses on adapting pre-trained graph models to downstream tasks by manuiplating downstream data to align with pre-training objectives. 
+						Researh includes (1) A comprehensive survey of existing graph prompt learning methods, and (2) Application of GPL techniques to various scenarios including <a href="">Targeted Community Detection (KDD'2024)</a>, <a href="https://arxiv.org/abs/2402.06326v2">Temporal Interaction Graph Modeling</a>, and <a href="https://arxiv.org/abs/2402.11472">Drug-Drug-Interaction Event Prediction</a>.
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/WxxShirley/Awesome-Graph-Prompt" style="float:left;"/>
+						    <a href="https://arxiv.org/abs/2311.16534" class="paper-link">[Survey Paper] </a> <a href="https://github.com/WxxShirley/Awesome-Graph-Prompt" class="code-link"> [Survey Repo]</a>
+						</div>
+					</li>
+				</ul>
+			</div><br/>
+
+			<div class="row row-thin">
+				<div class="col-md-12 text-left">
+					<h2>Selected Publications</h2>
+				</div>
+				<ul class="my_table">
 					<li class="my_item">
-						<div>
-							<div class="paper_badge">
-								CIKM'2023
-							</div>
-							<img src="images/paper/cikm23direc.jpg"" height="105" alt="generation" class="img_paper"/>
-						</div>
-						<strong>Dual Intents Graph Modeling for User-centric Group Discovery</strong><br/>
+						<strong><a href="" class="title-link">ProCom: Few-shot Targeted Community Detection Algorithm</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Kaiyu Xiong, Yun Xiong, Xiaoxin He, Yao Zhang, Yizhu Jiao, and Jiawei Zhang</span><br/>
+						<em>To Appear, proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
+					</li><br/>
+
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2406.11891" class="title-link">Towards Adaptive Neighborhood for Advancing Temporal Interaction Graph Modeling</a></strong><br/>
+						<span>Siwei Zhang, Xi Chen, Yun Xiong, <strong>Xixi Wu</strong>, Yao Zhang, Yongrui Fu, Yinglong Zhao, and Jiawei Zhang</span><br/>
+						<em>To Appear, proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2308.05013" class="title-link">Dual Intents Graph Modeling for User-centric Group Discovery</a></strong><br/>
 						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, and Jiawei Zhang</span><br/>
 						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
-						<button class="button_pdf" onclick="location.href='https://arxiv.org/abs/2308.05013'">Paper</button>
-						<button class="button_code" onclick="location.href='https://github.com/WxxShirley/CIKM2023DiRec'">Code</button>
-						<img src="https://img.shields.io/github/stars/WxxShirley/CIKM2023DiRec" style="float:left;"/>
-						<button class="button_video" onclick="location.href='https://www.bilibili.com/video/BV1H84y1d7Cc'">Video</button>
 					</li><br/>
-					<li class="my_item">
-						<div>
-							<div class="paper_badge">
-								CIKM'2023
-							</div>
-							<img src="images/paper/cikm23ilore.jpg"" height="110" alt="generation" class="img_paper"/>
-						</div>
-						<strong>iLoRE: Dynamic Graph Representation with Instant Long-term Modeling and Re-occurrence Preservation</strong><br/>
-						<span>Siwei Zhang, Yun Xiong, Yao Zhang, <strong>Xixi Wu</strong>, Xi Chen, Yiheng Sun, and Jiawei Zhang</span><br/>
-						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
-						<button class="button_pdf" onclick="location.href='https://arxiv.org/abs/2309.02012'">Paper</button>
-						<button class="button_code" onclick="location.href='https://github.com/FDUDSDE/iLoRE'">Code</button>
-					</li><br/>	
 
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2302.03555" class="title-link">ConsRec: Learning Consensus Behind Interactions for Group Recommendation</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, Jiawei Zhang, Yangyong Zhu, and Philip S. Yu</span><br/>
+						<em>Proceedings of the ACM Web Conference (<strong>WWW</strong>), 2023</em><br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/FDUDSDE/WWW2023ConsRec" style="float:left;"/>
+							<a href="https://github.com/FDUDSDE/WWW2023ConsRec" class="code-link">[Code]</a>
+							<a href="slides/WWW2023ConsRec.pdf" class="slides-link">[Slides]</a>
+							<a href="https://www.bilibili.com/video/BV1ZP411v7fu" class="video-link">[Video]</a>
+						</div>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539370" class="title-link">CLARE: A Semi-supervised Community Detection Algorithm</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, Caihua Shan, Yiheng Sun, Yangyong Zhu, and Philip S. Yu</span><br/>
+						<em>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2022</em><br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/FDUDSDE/KDD2022CLARE" style="float: left;"/>
+							<a href="https://github.com/FDUDSDE/KDD2022CLARE" class="code-link">[Code]</a> 
+							<a href="slides/KDD2022CLARE.pdf" class="slides-link">[Slides]</a> 
+							<a href="https://bilibili.com/video/BV1As4y1C7mX" class="video-link">[Video]</a>
+						</div>
+					</li><br/>
 				</ul>
 			</div>
-			<br/>
 
 
 			<div class="row row-thin">
@@ -162,14 +161,21 @@
 					<li class="my_item">
 						<img src="images/company/microsoft.jpg"" style="margin-top:0px; margin-right: 30px;" width="90" height="68" alt="generation" />
 						<div><p>
+							<strong> Microsoft Research Asia </strong><br/>
+							<em>Research Intern, Shanghai AI/ML Group</em>
+							<span class="date">Feb. 2024 - Jun. 2024</span><br/>
+						</p></div>
+					</li>
+					<li class="my_item">
+						<img src="images/company/microsoft.jpg"" style="margin-top:0px; margin-right: 30px;" width="90" height="68" alt="generation" />
+						<div><p>
 							<strong> Microsoft </strong><br/>
 							<em>Software Engineer Intern, Outlook Mobile Team</em>
-							<span class="date">Jul. 2020 – Sep. 2020</span><br/>
+							<span class="date">Jul. 2020 - Sep. 2020</span><br/>
 						</p></div>
 					</li>
 				</ul>
-			</div>
-            
+			</div><br/>
 
 			
 			<div class="row row-thin">
@@ -178,7 +184,7 @@
 				</div>
 				<ul class="my_table">
 					<li>
-						National Scholarship for Graduate Student
+						National Scholarship for Graduate Student, Ministry of Education, China
 						<span class="date">2022&2023</span>
 					</li>
 					<li>
@@ -190,7 +196,7 @@
 						<span class="date">2018&2021</span>
 					</li>
 					<li>
-						Second Prize of China Undergraduate Mathematical Contest in Modeling, Shanghai (CUMCM)
+						Second Prize of Undergraduate Mathematical Contest in Modeling, Shanghai, China (CUMCM)
 						<span class="date">2019</span>
 					</li>
 					<li>
@@ -199,24 +205,16 @@
 					</li>
 					
 				</ul>
-			</div>
-			<br>
+			</div><br/>
 
 
 			<div class="row row-thin">
 				<div class="col-md-12 text-left">
-					<h2>Misc</h2>
+					<h2>Miscellaneous</h2>
 					<ul>
-						<li>I have a passion for sports  🏊‍♀️ 🏋🏻. In my free time, I also enjoy cooking 🤣 </li>
-	                        <!-- <div style="display: flex; flex-wrap: wrap; margin-bottom: 15px;">
-								<img src="images/food/food1.jpg" style="width: 20%; margin: 5px;">
-								<img src="images/food/food2.jpg" style="width: 20%; margin: 5px;">
-								<img src="images/food/food3.jpg" style="width: 20%; margin: 5px;">
-								
-							</div> -->
-
-
-						<li>During my undergraduate studies, I discovered a love for mobile app development (all source codes can be found on my Github):
+						<li>I love sports like swimming 🏊, running 🏃, and weight training 🏋️. I also enjoy cooking Chinese food 🤣 </li>
+	                        
+						<li>During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
 							<table>
 								<tr>
 									<td style="padding: 10px; text-align: center;">
@@ -244,8 +242,7 @@
 						</li>
 
 						<li>
-							I enjoy exploring the unknown. 
-							I strive to move forward on this path of exploring and learning ✨
+							I enjoy exploring the unknown and strive to keep moving forward on this path of discovery and learning ✨
 						</li>
 
 					</ul>
@@ -260,7 +257,7 @@
 		</p>
 
 		<div style="padding:14px 0px 50px 0px;text-align:center;color:#d9d9d9;clear:both">
-			Last updated at Jan 7th, 2024 by Xixi
+			Last updated at Jun 28, 2024 by Xixi
 		</div>
 
 		</div> <!-- class="inner page" -->
