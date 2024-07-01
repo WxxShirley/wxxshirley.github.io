@@ -29,37 +29,10 @@ body {
   border-bottom: 1px solid #d9d9d9;
  }
 
-.container {
-  margin-bottom: 10%;
-  width: 1080px;
-}
-
 .row-thin {
   margin-left: 2%;
   margin-right: 2%;
 }
-
-.text-thin {
-  font-weight: 480;
-}
-
-.header-thin {
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.gray {
-  background-color: #F3F3F3;
-  margin-bottom: 1%;
-}
-
-
-.img-embeded {
-  width: 200;
-  height: 150;
-  margin: 8px 8px 8px 8px;
-}
-
 
 
 .img_research {
@@ -130,12 +103,7 @@ ul.my_table{
 }
 
 
-
 .date {
   color:brown;
   float:right;
 }
-
-#main { 
-  border-bottom: 1px solid #d9d9d9;
- }
