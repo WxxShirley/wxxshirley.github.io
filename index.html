@@ -29,14 +29,14 @@
 					<br/>
 
 					<span>
-						<a href="mailto:xxwu1120@gmail.com" class="my_link"><i class="fa fa-envelope"></i> Email</a> /
+						<a href="mailto:xxwu@se.cuhk.edu.hk" class="my_link"><i class="fa fa-envelope"></i> Email</a> /
 						<a href="https://github.com/WxxShirley" class="my_link"><i class="fa fa-github"></i> GitHub</a> / 
 						<a href="https://scholar.google.com/citations?user=VDW27LgAAAAJ&hl=en" class="my_link"><i class="ai ai-google-scholar-square"></i> Google Scholar</a> 
 					</span><br/>
 
 				</div>
 				<div style="float:right">
-					<img src="images/me_new.jpg" width="140" height="185" style="float:right;margin-top:0px;margin-bottom:0px"></img><br/>
+					<img src="images/me.jpg" width="140" height="185" style="float:right;margin-top:0px;margin-bottom:0px"></img><br/>
 				</div>
 			</div> <!-- class="row" -->
 			
@@ -54,11 +54,11 @@
 						<br/>
 						Previously, I received my B.S. and M.S. in Computer Science from <a href="https://www.fudan.edu.cn/en/">Fudan University</a> in 2021 and 2024, respectively.
 						<br/>
-						I was a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>, Shanghai AI/ML Group, mentored by <a href="https://www.microsoft.com/en-us/research/people/yifeishen/">Dr. Yifei SHEN</a> and <a href="https://www.microsoft.com/en-us/research/people/caihuashan/">Dr. Caihua SHAN</a>.
+						I was a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a> (<a href="https://ai-ml.cn/">Shanghai AI/ML Group</a>), mentored by <a href="https://www.microsoft.com/en-us/research/people/yifeishen/">Dr. Yifei SHEN</a> and <a href="https://www.microsoft.com/en-us/research/people/caihuashan/">Dr. Caihua SHAN</a>.
 					</p>
 					<p>
-						My research interests lie in the intersection of <strong>Graph Learning and Large Language Models (LLMs)</strong>. Specifically, I focus on integrating Graph Learning with LLMs to enhance their reasoning capabilities in graph-related applications, such as task planning in autonomous agents. My ultimate research goal is to realize <strong>General Graph Intelligence</strong>.
-						Additionally, I am interested in Data Mining, with a focus on topics like community detection, graph prompt learning, recommender systems, etc.
+						My research interests lie in the intersection of <strong>Graph Learning and Large Language Models (LLMs)</strong>. Specifically, I focus on integrating Graph Learning with LLMs to enhance their reasoning capabilities in graph-related applications, such as task planning in autonomous agents. 
+						Additionally, I am interested in Data Mining, focusing on topics like community detection, graph prompt learning, recommender systems, etc.
 					</p>
 				</div>
 			</div>
@@ -73,11 +73,11 @@
 						<div>
 							<img src="images/research/task_plan.jpg" height="180" alt="generation" class="img_research"/>
 						</div>
-						<h4><strong>Graph Learning-enhanced Task Planning</strong></h4> 
+						<h4><strong>Graph Learning for Task Planning (NeurIPS'2024)</strong></h4> 
+						<!-- 🤔<em> Can Graph Learning Improve Planning in LLM-based Agents?</em><br/> -->
 
-						Tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Task planning involves selecting a path within this graph to fulfill user requests. Our research analyzes how Transformer architectures and the Auto-regressive loss affect LLMs' effectiveness on solving graph decision-making problems.
-                        We propose introducing GNN as a simple fix, offering both training-free and training-required variants. 
-					    
+						In language agents, available tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Under such context, task planning involves selecting a path within this graph to fulfill user requests.
+						We find that the bottleneck in LLMs' planning abilities lies in their limited understanding of the task graph. Therefore, we introduce GNNs as a simple fix, available in both training-free and training-required variants. Extensive experiments demonstrate that GNN-based methods surpass existing solutions even without training.
 						<br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" style="float:left;"/>
@@ -108,41 +108,24 @@
 				</div>
 				<ul class="my_table">
 					<li class="my_item">
-						<strong><a href="https://arxiv.org/abs/2402.11472" class="title-link">DDIPrompt: Drug-Drug Interaction Event Prediction based on Graph Prompt Learning</a></strong><br/>
-						<span>Yingying Wang, Yun Xiong, <strong>Xixi Wu</strong>, Xiangguo Sun, Jiawei Zhang, and Guangyong Zheng</span><br/>
-						<em>To Appear, proceedings of the 33rd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2024</em><br/>
+						<strong><a href="https://arxiv.org/abs/2405.19119" class="title-link">Can Graph Learning Improve Planning in LLM-based Agents?</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Yifei Shen, Caihua Shan, Kaitao Song, Siwei Wang, Bohang Zhang, Jiarui Feng, Hong Cheng, Wei Chen, Yun Xiong, and Dongsheng Li</span><br/>
+						<em>To appear, Proceedings of the 38th Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2024</em><br/>
 						<div style="display: flex; align-items: center;">
-							<img src="https://img.shields.io/badge/Graph%20Prompt%20Learning-blue" style="float:left;margin-right:0px" />
+							<img src="https://img.shields.io/badge/Large%20Language%20Models-purple" style="float:left; margin-right:0px" />
+							<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" style="float: left;"/>
+							<a href="https://github.com/WxxShirley/GNN4TaskPlan" class="code-link">[Code]</a> 
 						</div>
 					</li><br/>
 
 					<li class="my_item">
 						<strong><a href="https://arxiv.org/abs/2408.07369" class="title-link">ProCom: A Few-shot Targeted Community Detection Algorithm</a></strong><br/>
 						<span><strong>Xixi Wu</strong>, Kaiyu Xiong, Yun Xiong, Xiaoxin He, Yao Zhang, Yizhu Jiao, and Jiawei Zhang</span><br/>
-						<em>To Appear, proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
+						<em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/badge/Community%20Detection-red" style="float:left;margin-right:0px" />
 							<img src="https://img.shields.io/badge/Graph%20Prompt%20Learning-blue" style="float:left;margin-right:0px" />
 						</div>
-					</li><br/>
-
-
-					<li class="my_item">
-						<strong><a href="https://arxiv.org/abs/2406.11891" class="title-link">Towards Adaptive Neighborhood for Advancing Temporal Interaction Graph Modeling</a></strong><br/>
-						<span>Siwei Zhang, Xi Chen, Yun Xiong, <strong>Xixi Wu</strong>, Yao Zhang, Yongrui Fu, Yinglong Zhao, and Jiawei Zhang</span><br/>
-						<em>To Appear, proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
-					</li><br/>
-
-					<li class="my_item">
-						<strong><a href="https://arxiv.org/abs/2308.05013" class="title-link">Dual Intents Graph Modeling for User-centric Group Discovery</a></strong><br/>
-						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, and Jiawei Zhang</span><br/>
-						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
-					</li><br/>
-
-					<li class="my_item">
-						<strong><a href="https://dl.acm.org/doi/abs/10.1145/3583780.3614926" class="title-link">iLoRE: Dynamic Graph Representation with Instant Long-term Modeling and Re-occurrence Preservation</a></strong><br/>
-						<span>Siwei Zhang, Yun Xiong, Yao Zhang, <strong>Xixi Wu</strong>, Yiheng Sun, and Jiawei Zhang.</span><br/>
-						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
 					</li><br/>
 
 					<li class="my_item">
@@ -170,6 +153,31 @@
 							<a href="https://bilibili.com/video/BV1As4y1C7mX" class="video-link">[Video]</a>
 						</div>
 					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2402.11472" class="title-link">DDIPrompt: Drug-Drug Interaction Event Prediction based on Graph Prompt Learning</a></strong><br/>
+						<span>Yingying Wang, Yun Xiong, <strong>Xixi Wu</strong>, Xiangguo Sun, Jiawei Zhang, and Guangyong Zheng</span><br/>
+						<em>To appear, Proceedings of the 33rd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2024</em><br/>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2406.11891" class="title-link">Towards Adaptive Neighborhood for Advancing Temporal Interaction Graph Modeling</a></strong><br/>
+						<span>Siwei Zhang, Xi Chen, Yun Xiong, <strong>Xixi Wu</strong>, Yao Zhang, Yongrui Fu, Yinglong Zhao, and Jiawei Zhang</span><br/>
+						<em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2024</em><br/>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2308.05013" class="title-link">Dual Intents Graph Modeling for User-centric Group Discovery</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Yun Xiong, Yao Zhang, Yizhu Jiao, and Jiawei Zhang</span><br/>
+						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://dl.acm.org/doi/abs/10.1145/3583780.3614926" class="title-link">iLoRE: Dynamic Graph Representation with Instant Long-term Modeling and Re-occurrence Preservation</a></strong><br/>
+						<span>Siwei Zhang, Yun Xiong, Yao Zhang, <strong>Xixi Wu</strong>, Yiheng Sun, and Jiawei Zhang.</span><br/>
+						<em>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2023</em><br/>
+					</li><br/>
+
 				</ul>
 			</div>
 
@@ -233,7 +241,7 @@
 					<h2>Professional Services</h2>
 					<ul>
 						<li>
-							<strong>Conference Reviewer:</strong> WWW'2024 Graph Foundation Model (GFM) Workshop, SIGKDD'2024&2025, NeurIPS'2024
+							<strong>Conference Reviewer:</strong> WWW'2024 Graph Foundation Model (GFM) Workshop, SIGKDD'2024&2025, NeurIPS'2024, ICLR'2025
 						</li>
 						<li>
 							<strong>Journal Reviewer: </strong> TKDE
@@ -250,7 +258,7 @@
 				<div class="col-md-12 text-left">
 					<h2>Miscellaneous</h2>
 					<ul>
-						<li>I love sports like swimming 🏊, running 🏃, and weight training 🏋️. I also enjoy cooking Chinese food 🤣 </li>
+						<li>I love sports like swimming 🏊 and running 🏃. I also enjoy cooking Chinese food 🤣 </li>
 	                        
 						<li>During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
 							<table>
@@ -295,7 +303,7 @@
 		</p>
 
 		<div style="padding:14px 0px 30px 0px;text-align:center;color:#d9d9d9;clear:both">
-			Last updated at July 1, 2024 by Xixi
+			Last updated at Oct 7, 2024 by Xixi
 		</div>
 
 		</div> <!-- class="inner page" -->
