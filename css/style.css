@@ -98,6 +98,10 @@ li.my_item img{
   color: pink
 }
 
+.blog-link{
+  margin-right: 5px;
+  color: red;
+}
 
 
 @media only screen and (max-width: 1000px) {
