@@ -56,10 +56,12 @@
 						Previously, I received my B.S. and M.S. in Computer Science from <a href="https://www.fudan.edu.cn/en/">Fudan University</a> in 2021 and 2024, respectively.
 						<br/>
 						I was a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a> (<a href="https://ai-ml.cn/">Shanghai AI/ML Group</a>), mentored by <a href="https://www.microsoft.com/en-us/research/people/yifeishen/">Dr. Yifei SHEN</a> and <a href="https://www.microsoft.com/en-us/research/people/caihuashan/">Dr. Caihua SHAN</a>.
+						<br/> 
 					</p>
 					<p>
-						My research interests lie in <strong>Large Language Models (LLMs) and Graph Learning</strong>. Specifically, I focus on integrating Graph Learning with LLMs to enhance their reasoning capabilities in graph-related applications, such as task planning in autonomous agents. 
-						Additionally, I am interested in Data Mining, focusing on topics like community detection, graph prompt learning, recommender systems, etc.
+						I have been with the <a href="https://tongyi-agent.github.io/about/"><strong>Tongyi DeepResearch team</strong></a> since June 2025, conducting research on <strong>Agentic RL</strong> to unlock long-horizon search intelligence for web agents.
+					
+						Prior to my research on LLMs, I conducted research on Data Mining, focusing on topics like community detection, graph prompt learning, recommender systems, etc.
 					</p>
 				</div>
 			</div>
@@ -69,16 +71,20 @@
 					<h3 style="margin-top:5px; color: #0056b3;">Recent News</h3>
 					<ul style="list-style-type: disc; padding-left: 20px;">
 						<li>
+							<span style="font-style: italic; color: #555;">🔥 <strong>[Sep 2025]</strong></span> 
+							Excited to share our team's progress: <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">Tongyi-DeepResearch-30B-A3B</a> achieves SOTA performance across open-source and proprietary agents on multiple benchmarks, accompanied by two papers detailing the methods behind these gains, <a href="https://arxiv.org/abs/2509.13313" style="color: #0056b3; text-decoration: underline;">ReSum</a>, a minimal extension to ReAct that enables long-horizon search, and <a href="https://arxiv.org/abs/2509.13305" style="color: #0056b3; text-decoration: underline;">WebSailor-v2</a>, a scalable data-synthesis and RL training pipeline.
+						</li>
+						<li>
+							<span style="font-style: italic; color: #555;">[Aug 2025]</span> 
+							Our paper <a href="https://github.com/WxxShirley/MoLoRAG" style="color: #0056b3; text-decoration: underline;">MoLoRAG</a> was accepted to <strong>EMNLP'2025</strong>. See you in Suzhou ✨
+						</li>
+						<li>
+							<span style="font-style: italic; color: #555;">[July 2025]</span> 
+							Introducing <a href="https://github.com/Alibaba-NLP/WebAgent" style="color: #0056b3; text-decoration: underline;">WebSailor</a>, which achieves open-source SOTA performance on some of the most difficult browsing benchmarks. WebSailor topped the HuggingFace daily papers 🥇
+						</li>
+						<li>
 							<span style="font-style: italic; color: #555;">[May 2025]</span> 
 							Our paper <a href="https://llmnodebed.github.io/" style="color: #0056b3; text-decoration: underline;">LLMNodeBed</a> was accepted to <strong>ICML'2025</strong>. See you in Vancouver again 😄
-						</li>
-						<!-- <li>
-							<span style="font-style: italic; color: #555;">[May 2025]</span> 
-							I will join <a href="https://qwenlm.github.io/" style="color: #0056b3; text-decoration: underline;">Alibaba Tongyi Lab</a> as a Research Intern in Summer 2025.
-						</li> -->
-						<li>
-							<span style="font-style: italic; color: #555;">[Feb 2025]</span> 
-							Develop <a href="https://llmnodebed.github.io/" style="color: #0056b3; text-decoration: underline;">LLMNodeBed</a>, a codebase and testbed for LLM-based node Classification algorithms. Along with codebase inegrating 10 datasets, 10+ algorithms, 8 novel takeaways based on experiments are also released.
 						</li>
 						<li>
 							<span style="font-style: italic; color: #555;">[Nov 2024]</span> 
@@ -98,6 +104,21 @@
 					<h2>Research Highlights</h2>
 				</div>
 				<ul class="my_table">
+					<li class="my_item">
+						<div>
+							<img src="images/research/resum.jpg" height="180" alt="generation" class="img_research"/>
+						</div>
+						<h4><strong>ReSum - A New Inference Paradigm for Web Agents</strong></h4> 
+
+						We introduce ReSum, a novel paradigm that enables indefinite exploration through periodic context summarization. ReSum minimizes modifications to ReAct to avoid additional architectural complexity, ensuring plug-and-play compatibility with existing agents. We further design ReSum-GRPO to familiarize agents with this paradigm. Experiments across web agents on three challenging benchmarks show average improvements of 4.5% for ReSum compared to ReAct, with further improvements of 8.2% after ReSum-GRPO training. 
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" style="float:left;"/>
+						    <a href="https://arxiv.org/abs/2509.13313" class="paper-link"> [Paper] </a>  <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link"> [Blog] </a>
+						</div>
+					</li><br/>
+
+
 					<li class="my_item">
 						<div>
 							<img src="images/research/nodebed_poster.png" height="180" alt="generation" class="img_research"/>
@@ -139,9 +160,31 @@
 				</div>
 				<ul class="my_table">
 					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
+						<span><strong>Xixi Wu*</strong>, Kuan Li, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
+						<em>arXiv preprint</em><br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/badge/Large%20Language%20Models-purple" style="float:left; margin-right:0px" />
+							<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" style="float: left;"/>
+							<a href="https://github.com/Alibaba-NLP/DeepResearch" class="code-link">[Code]</a> 
+							<a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link">[Blog]</a>
+						</div>
+					</li><br/>
+
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2509.07666" class="title-link">MoLoRAG: Bootstrapping Document Understanding via Multi-modal Logic-aware Retrieval</a></strong><br/>
+						<span><strong>Xixi Wu</strong>, Yanchao Tan, Nan Hou, Ruiyang Zhang, and Hong Cheng</span><br/>
+						<em>To appear, Proceedings of the Conference on Empirical Methods in Natural Language Processing(<strong>EMNLP</strong>), 2025</em><br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/badge/Large%20Language%20Models-purple" style="float:left; margin-right:0px" />
+							<a href="https://github.com/WxxShirley/MoLoRAG/" class="code-link" style="margin-left: 5px">[Code]</a> 
+						</div>
+					</li><br/>
+
+					<li class="my_item">
 						<strong><a href="https://arxiv.org/abs/2502.00829" class="title-link">A Comprehensive Analysis on LLM-based Node Classification Algorithms</a></strong><br/>
 						<span><strong>Xixi Wu</strong>, Yifei Shen, Fangzhou Ge, Caihua Shan, Yizhu Jiao, Xiangguo Sun, and Hong Cheng</span><br/>
-						<em>To appear, Proceedings of the 42th International Conference on Machine Learning (<strong>ICML</strong>), 2025</em><br/>
+						<em>Proceedings of the 42th International Conference on Machine Learning (<strong>ICML</strong>), 2025</em><br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/badge/Large%20Language%20Models-purple" style="float:left; margin-right:0px" />
 							<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" style="float: left;"/>
