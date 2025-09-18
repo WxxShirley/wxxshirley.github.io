@@ -80,7 +80,7 @@
 						</li>
 						<li>
 							<span style="font-style: italic; color: #555;">[July 2025]</span> 
-							Introducing <a href="https://github.com/Alibaba-NLP/WebAgent" style="color: #0056b3; text-decoration: underline;">WebSailor</a>, which achieves open-source SOTA performance on some of the most difficult browsing benchmarks. WebSailor topped the HuggingFace daily papers 🥇
+							Introducing <a href="https://arxiv.org/abs/2507.02592" style="color: #0056b3; text-decoration: underline;">WebSailor</a>, which achieves open-source SOTA performance on some of the most difficult browsing benchmarks. WebSailor topped the HuggingFace daily papers 🥇
 						</li>
 						<li>
 							<span style="font-style: italic; color: #555;">[May 2025]</span> 
@@ -106,15 +106,29 @@
 				<ul class="my_table">
 					<li class="my_item">
 						<div>
-							<img src="images/research/resum.jpg" height="180" alt="generation" class="img_research"/>
+							<img src="images/research/resum.jpg" height="175" alt="generation" class="img_research"/>
 						</div>
-						<h4><strong>ReSum - A New Inference Paradigm for Web Agents</strong></h4> 
+						<h4><strong>ReSum: A New Inference Paradigm for Web Agents</strong></h4> 
 
 						We introduce ReSum, a novel paradigm that enables indefinite exploration through periodic context summarization. ReSum minimizes modifications to ReAct to avoid additional architectural complexity, ensuring plug-and-play compatibility with existing agents. We further design ReSum-GRPO to familiarize agents with this paradigm. Experiments across web agents on three challenging benchmarks show average improvements of 4.5% for ReSum compared to ReAct, with further improvements of 8.2% after ReSum-GRPO training. 
 						<br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" style="float:left;"/>
-						    <a href="https://arxiv.org/abs/2509.13313" class="paper-link"> [Paper] </a>  <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link"> [Blog] </a>
+						    <a href="https://arxiv.org/abs/2509.13313" class="paper-link"> [Paper] </a> <a href="https://github.com/Alibaba-NLP/DeepResearch/tree/main/WebAgent/WebResummer" class="code-link"> [Code] </a> <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link"> [Blog] </a>
+						</div>
+					</li><br/>
+
+					<li class="my_item">
+						<div>
+							<img src="images/research/websailor.jpg" height="150" alt="generation" class="img_research"/>
+						</div>
+						<h4><strong>WebSailor: Open recipe for Post-training on Web Agents</strong></h4> 
+
+						WebSailor provides an open recipe for post-training web agents, including data synthesis, supervised fine-tuning, and reinforcement learning. Built on the Qwen3-30B-A3B model, WebSailor-V2 achieves state-of-the-art performance, scoring 35.3% on BrowseComp-en, 44.1% on BrowseComp-zh, and 30.6% on Humanity’s Last Exam (HLE).
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" style="float:left;"/>
+						    <a href="https://arxiv.org/abs/2507.02592" class="paper-link"> [WebSailor-V1] </a> <a href="https://arxiv.org/abs/2509.13305" class="paper-link"> [WebSailor-V2] </a> 
 						</div>
 					</li><br/>
 
@@ -161,12 +175,12 @@
 				<ul class="my_table">
 					<li class="my_item">
 						<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
-						<span><strong>Xixi Wu*</strong>, Kuan Li, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
+						<span><strong>Xixi Wu*</strong>, Kuan Li*, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
 						<em>arXiv preprint</em><br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/badge/Large%20Language%20Models-purple" style="float:left; margin-right:0px" />
 							<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" style="float: left;"/>
-							<a href="https://github.com/Alibaba-NLP/DeepResearch" class="code-link">[Code]</a> 
+							<a href="https://github.com/Alibaba-NLP/DeepResearch/tree/main/WebAgent/WebResummer" class="code-link">[Code]</a> 
 							<a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link">[Blog]</a>
 						</div>
 					</li><br/>
