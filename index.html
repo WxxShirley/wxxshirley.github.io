@@ -54,10 +54,87 @@
 						<br/> 
 					</p>
 					<p>
-						My research focuses on developing efficient algorithms for <strong>Structured Data Analysis</strong> and <strong>Information Retrieval</strong>. I am particularly interested in optimizing how systems organize web contexts and process complex queries in multi-step search scenarios. 
-						Prior to my current focus, I conducted research on Graph Learning.
+						My research interests are in machine learning and language technologies, including reasoning, planning, and information access in language systems. Before focusing on language technologies, I conducted research on graph learning.
 					</p>
 				</div>
+			</div>
+
+			<div class="row row-thin">
+				<div class="news-container col-md-12 text-left">
+					<h3 style="margin-top:5px; color: #0056b3;">Recent News</h3>
+					<ul style="list-style-type: disc; padding-left: 20px;">
+						<li>
+							<span style="font-style: italic; color: #555;">[Aug 2025]</span> 
+							Our paper <a href="https://github.com/WxxShirley/MoLoRAG" style="color: #0056b3; text-decoration: underline;">MoLoRAG</a> was accepted to <strong>EMNLP'2025</strong>. See you in Suzhou ✨
+						</li>
+						<li>
+							<span style="font-style: italic; color: #555;">[May 2025]</span> 
+							Our paper <a href="https://llmnodebed.github.io/" style="color: #0056b3; text-decoration: underline;">LLMNodeBed</a> was accepted to <strong>ICML'2025</strong>. See you in Vancouver again 😄
+						</li>
+						<li>
+							<span style="font-style: italic; color: #555;">[Nov 2024]</span> 
+							I was awarded <a href="https://neurips.cc/Conferences/2024/ProgramCommittee" style="color: #0056b3; text-decoration: underline;">NeurIPS'2024 Top Reviewer</a> 🥳
+						</li>
+						<li>
+							<span style="font-style: italic; color: #555;">[Sep 2024]</span> 
+							Our paper <a href="https://github.com/WxxShirley/GNN4TaskPlan" style="color: #0056b3; text-decoration: underline;">GNN4TaskPlan</a> was accepted to NeurIPS'2024. See you in Vancouver!
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+
+			<div class="row row-thin">
+				<div class="col-md-12 text-left">
+					<h2>Research Highlights</h2>
+				</div>
+				<ul class="my_table">
+					<!-- <li class="my_item">
+						<div>
+							<img src="images/research/resum.jpg" height="140" alt="generation" class="img_research"/>
+						</div>
+						<h4><strong>ReSum: Context Summarization for Long-Horizon Reasoning</strong></h4> 
+
+						ReSum studies the use of periodic context summarization to support longer reasoning processes in language systems. It is designed as a lightweight extension with minimal changes to existing ReAct workflows, and shows improved performance on challenging information-seeking benchmarks like BrowseComp and GAIA.
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<a href="https://arxiv.org/abs/2509.13313" class="paper-link"> [Paper] </a> 
+						</div>
+					</li><br/> -->
+
+					<li class="my_item">
+						<div>
+							<img src="images/research/nodebed_poster.png" height="180" alt="generation" class="img_research"/>
+						</div>
+						<h4><strong>Benchmark of LLM4Graph Algorithms (ICML'2025)</strong></h4> 
+
+						We introduce LLMNodeBed, a PyG-based testbed for LLM-based node classification algorithms. It integrates 14 datasets, supports 8 LLM-based and 8 classic methods, and covers 3 learning configurations.
+
+                        With LLMNodeBed, we train and evaluate over 2,700 models to analyze the effects of factors like LLM type and size, prompt, learning paradigm, and dataset homophily. Our study reveals 8 key insights, including (1) optimal settings for each algorithm category, and (2) scenarios where LLMs significantly outperform LMs.
+
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" style="float:left;"/>
+						    <a href="https://openreview.net/forum?id=O3WqAhxuc7" class="paper-link"> [Paper] </a> <a href="https://github.com/WxxShirley/LLMNodeBed" class="code-link"> [Code] </a> <a href="slides/ICML2025NodeBed.pdf" class="slides-link"> [Poster] </a> <a href="https://zhuanlan.zhihu.com/p/1913536056717967976" class="blog-link"> [Blog] </a>
+						</div>
+					</li><br/>
+
+					<li class="my_item">
+						<div>
+							<img src="images/research/taskplan_poster.png" height="180" alt="generation" class="img_research"/>
+						</div>
+						<h4><strong>Graph Learning for Task Planning (NeurIPS'2024)</strong></h4> 
+
+						In language agents, available tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Under such context, task planning involves selecting a path within this graph to fulfill user requests.
+						We find that the bottleneck in LLMs' planning abilities lies in their limited understanding of the task graph. Therefore, we introduce GNNs as a simple fix, available in both training-free and training-required variants. Extensive experiments demonstrate that GNN-based methods surpass existing solutions even without training.
+						<br/>
+						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" style="float:left;"/>
+						    <a href="https://neurips.cc/virtual/2024/poster/94464" class="paper-link"> [Paper] </a> <a href="https://github.com/WxxShirley/GNN4TaskPlan" class="code-link"> [Code] </a> <a href="slides/NIPS2024Plan.pdf" class="slides-link"> [Poster] </a> <a href="https://zhuanlan.zhihu.com/p/936340518" class="blog-link"> [Blog] </a>
+						</div>
+					</li><br/>
+				</ul>
+				</ul>
 			</div><br/>
 
 			<div class="row row-thin">
@@ -65,6 +142,12 @@
 					<h2>Selected Publications</h2>
 				</div>
 				<ul class="my_table">
+					<li class="my_item">
+						<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
+						<span><strong>Xixi Wu*</strong>, Kuan Li*, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Xinmiao Yu, Dingchu Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
+						<em>arXiv preprint, 2025</em><br/>
+					</li><br/>
+
 					<li class="my_item">
 						<strong><a href="https://openreview.net/forum?id=CByVWPpb8T" class="title-link">Repurposing Synthetic Data for Fine-grained Search Agent Supervision</a></strong><br/>
 						<span>Yida Zhao, Kuan Li, <strong>Xixi Wu</strong>, Liwen Zhang, Dingchu Zhang, Baixuan Li, Maojia Song, Zhuo Chen, Chenxi Wang, Xinyu Wang, Kewei Tu, Pengjun Xie, Jingren Zhou, and Yong Jiang</span><br/>
@@ -76,24 +159,26 @@
 						<span><strong>Xixi Wu</strong>, Yanchao Tan, Nan Hou, Ruiyang Zhang, and Hong Cheng</span><br/>
 						<em>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>), 2025</em><br/>
 						<div style="display: flex; align-items: center;">
+							<img src="https://img.shields.io/github/stars/WxxShirley/MoLoRAG" style="float: left;"/>
 							<a href="https://github.com/WxxShirley/MoLoRAG/" class="code-link" style="margin-left: 5px">[Code]</a> 
 							<a href="slides/EMNLP2025MoLoRAG.pdf" class="slides-link">[Poster]</a> 
 						</div>
 					</li><br/>
 
 					<li class="my_item">
-						<strong><a href="https://arxiv.org/abs/2502.00829" class="title-link">When Do LLMs Help With Node Classification? A Comprehensive Analysis</a></strong><br/>
+						<strong><a href="https://openreview.net/forum?id=O3WqAhxuc7" class="title-link">When Do LLMs Help With Node Classification? A Comprehensive Analysis</a></strong><br/>
 						<span><strong>Xixi Wu</strong>, Yifei Shen, Fangzhou Ge, Caihua Shan, Yizhu Jiao, Xiangguo Sun, and Hong Cheng</span><br/>
 						<em>Proceedings of the 42nd International Conference on Machine Learning (<strong>ICML</strong>), 2025</em><br/>
 						<div style="display: flex; align-items: center;">
 							<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" style="float: left;"/>
 							<a href="https://github.com/WxxShirley/LLMNodeBed/" class="code-link">[Code]</a> 
 							<a href="slides/ICML2025NodeBed.pdf" class="slides-link">[Poster]</a> 
+							<a href="https://llmnodebed.github.io/" class="blog-link">[Project Page]</a>
 						</div>
 					</li><br/>
 
 					<li class="my_item">
-						<strong><a href="https://arxiv.org/abs/2405.19119" class="title-link">Can Graph Learning Improve Planning in LLM-based Agents?</a></strong><br/>
+						<strong><a href="https://neurips.cc/virtual/2024/poster/94464" class="title-link">Can Graph Learning Improve Planning in LLM-based Agents?</a></strong><br/>
 						<span><strong>Xixi Wu*</strong>, Yifei Shen*, Caihua Shan, Kaitao Song, Siwei Wang, Bohang Zhang, Jiarui Feng, Hong Cheng, Wei Chen, Yun Xiong, and Dongsheng Li</span><br/>
 						<em>Proceedings of the 38th Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2024</em><br/>
 						<div style="display: flex; align-items: center;">
@@ -163,15 +248,15 @@
 						<img src="images/company/microsoft.jpg" style="margin-top:0px; margin-left: 26px; margin-right: 30px;" width="45" height="45" alt="generation"/>
 						<div><p>
 							<strong> Microsoft Research Asia </strong><br/>
-							<em>Research Intern</em>
+							<em>Research Intern, Shanghai AI/ML Group</em>
 							<span class="date">Feb. 2024 - Jun. 2024</span><br/><br/>
 						</p></div>
 					</li>
 					<li class="my_item">
 						<img src="images/company/tongyi-logo.jpg" style="margin-top:5px; margin-left: 26px; margin-right: 30px;" width="48" height="48" alt="generation" />
 						<div><p>
-							<strong>Alibaba Group </strong><br/>
-							<em>Research Intern@Tongyi Lab</em>
+							<strong> Alibaba Group </strong><br/>
+							<em>Research Intern, Tongyi Lab</em>
 							<span class="date">Jun. 2025 - Oct. 2025</span><br/>
 						</p></div>
 					</li>
