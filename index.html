@@ -388,37 +388,67 @@
 					<ul>
 						<li>Goal for this year: <strong style="color:#e65100;">run a half marathon</strong>! Let's see 💨</li>
 
-						<li>I love sports like swimming 🏊 and running 🏃. I also enjoy cooking Chinese food 🤣 </li>
+						<li>I enjoy swimming 🏊, running 🏃, and cooking Chinese food 🍳 </li>
 
-						<li>During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
-							<table>
-								<tr>
-									<td style="padding: 10px; text-align: center;">
-										<img src="images/project/lose-weight.png" style="width: 60px; margin: 5px;">
-										<img src="images/project/lose-weight.png" style="width: 60px; margin: 5px;">
-										<p><em><strong><a href="https://github.com/WxxShirley/LoseWeight" class="title-link">Lose Weight</a></strong>, a Flutter App</em></p>
-										
-									</td>
-
-									<td style="padding: 10px; text-align: center;">
-										<img src="images/project/QR.jpeg" style="width: 110px; margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px;">
-									
-										<p><em><strong><a href="https://github.com/WxxShirley/SE-Travel" class="title-link">Hulv</a></strong>, a Mini-Program</em></p>
-									</td>
-
-									<td style="padding: 10px; text-align: center;">
-										<img src="images/project/chatroom.png" style="width: 140px; margin: 5px;">		
-										<p><em><strong><a href="https://github.com/WxxShirley/Chatroom" class="title-link">Chatroom</a></strong>, a Desktop App</em></p>
-									</td>
-
-
-								</tr>
-							</table>
-
+						<li>I love traveling and collecting favorite places along the way — Yangmingshan in Taipei is my favorite hike so far 🏔️
+							<div style="display: flex; overflow-x: auto; gap: 10px; padding: 10px 0;">
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/kyoto.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Kyoto</em></p>
+								</div>
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/taipei.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Yangmingshan</em></p>
+								</div>
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/seatle.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Seattle</em></p>
+								</div>
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/tokyo.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Mt. Fuji</em></p>
+								</div>
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/hongkong.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Hong Kong</em></p>
+								</div>
+								<div style="flex: 0 0 auto; text-align: center;">
+									<img src="images/places/kaohusing.jpeg" style="width: 160px; border-radius: 4px; display: block;">
+									<p><em style="color:#888;">Kaohsiung</em></p>
+								</div>
+							</div>
 						</li>
 
 						<li>
-							I enjoy exploring the unknown and strive to keep moving forward on this path of discovery and learning ✨
+							Curiosity keeps me moving — both in research and in life ✨
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" id="toggle-apps-link" onclick="toggleApps()">[Show my undergrad app projects]</a>
+							<div id="apps-table" style="display:none; margin-top: 8px;">
+								During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
+								<table>
+									<tr>
+										<td style="padding: 10px; text-align: center;">
+											<img src="images/project/lose-weight.png" style="width: 60px; margin: 5px;">
+											<img src="images/project/lose-weight.png" style="width: 60px; margin: 5px;">
+											<p><em><strong><a href="https://github.com/WxxShirley/LoseWeight" class="title-link">Lose Weight</a></strong>, a Flutter App</em></p>
+
+										</td>
+
+										<td style="padding: 10px; text-align: center;">
+											<img src="images/project/QR.jpeg" style="width: 110px; margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px;">
+
+											<p><em><strong><a href="https://github.com/WxxShirley/SE-Travel" class="title-link">Hulv</a></strong>, a Mini-Program</em></p>
+										</td>
+
+										<td style="padding: 10px; text-align: center;">
+											<img src="images/project/chatroom.png" style="width: 140px; margin: 5px;">
+											<p><em><strong><a href="https://github.com/WxxShirley/Chatroom" class="title-link">Chatroom</a></strong>, a Desktop App</em></p>
+										</td>
+									</tr>
+								</table>
+							</div>
 						</li>
 
 					</ul>
@@ -442,6 +472,14 @@
 				var hidden = list.style.display === 'none';
 				list.style.display = hidden ? 'block' : 'none';
 				link.textContent = hidden ? '[Show fewer publications]' : '[Show all publications]';
+			}
+
+			function toggleApps() {
+				var box = document.getElementById('apps-table');
+				var link = document.getElementById('toggle-apps-link');
+				var hidden = box.style.display === 'none';
+				box.style.display = hidden ? 'block' : 'none';
+				link.textContent = hidden ? '[Hide my undergrad app projects]' : '[Show my undergrad app projects]';
 			}
 		</script>
 	</body>
