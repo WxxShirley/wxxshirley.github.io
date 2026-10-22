@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wght@6..144,-10..0,1..1000&family=Noto+Serif+SC:wght@500&display=swap">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="aSc5YLbeF55oadInzbW2R97pKbsed12qRJ1Gfaghb2A">
 	<title>Xixi's Homepage</title>
@@ -55,13 +58,13 @@
 				<br/>
 			</p>
 			<p>
-				My research focuses on <strong>building autonomous agents capable of long-horizon reasoning and execution, and ultimately self-evolution</strong>, with an emphasis on <strong>agentic post-training</strong>, particularly reinforcement learning, to empower these capabilities.
+				My research focuses on <strong>building autonomous agents for long-horizon reasoning, tool use, and self-evolution</strong>, with an emphasis on <strong>agentic post-training and reinforcement learning</strong> (currently at Google DeepMind, I am cooking Gemma &#x1F9D1;&#x200D;&#x1F373;).
 				Before working on language agents, I conducted research on graph learning, including community detection and recommendation.
 			</p>
 			<div class="job-callout">
 				<i class="fa fa-briefcase"></i>
-				I am open to both <strong>full-time Research Scientist</strong> and <strong>Research Scientist Intern</strong> positions starting <strong>Summer 2027</strong> in the <strong>US&nbsp;/&nbsp;Singapore</strong>.
-				Please feel free to contact me if you think I would be a good fit!
+				I am open to both <strong>full-time Research Scientist</strong> and <strong>Research Intern</strong> positions starting <strong>May 2027</strong> in the <strong>US&nbsp;/&nbsp;Singapore</strong>.
+				Please feel free to reach out if you think I would be a good fit!
 			</div>
 		</div>
 	</div>
@@ -73,7 +76,7 @@
 			<ul>
 				<li>
 					<span class="news-date">[Aug 2026]</span>
-					Our paper <a href="https://arxiv.org/abs/2603.21972">Agent-STAR</a> was accepted to <strong>EMNLP'2026 Findings</strong> 🎉
+					Our paper <a href="https://arxiv.org/abs/2603.21972">Agent-STAR</a>, a comprehensive RL recipe for long-horizon tool-using agents, was accepted to <strong>EMNLP'2026 Findings</strong> 🎉 [<a href="https://github.com/WxxShirley/Agent-STAR">Code</a>]
 				</li>
 				<li>
 					<span class="news-date">[Jun 2026]</span>
@@ -84,14 +87,10 @@
 					I passed my Ph.D. Thesis Proposal Defense and am now officially a <strong>Ph.D. candidate</strong> 🎓
 				</li>
 				<li>
-					<span class="news-date">[Mar 2026]</span>
-					Our paper <a href="https://arxiv.org/abs/2603.21972">Agent-STAR</a> is out on arXiv, a practical training recipe for long-horizon tool-using agents [<a href="https://github.com/WxxShirley/Agent-STAR">Code</a>]
-				</li>
-				<li class="news-more" hidden>
 					<span class="news-date">[Feb 2026]</span>
 					Our paper <a href="https://arxiv.org/abs/2510.23458">BrowseConf</a> was accepted to <strong>ACL'2026 Findings</strong> 🎉
 				</li>
-				<li class="news-more" hidden>
+				<li>
 					<span class="news-date">[Jan 2026]</span>
 					Our papers <a href="https://openreview.net/forum?id=CByVWPpb8T">E-GRPO</a> and <a href="https://openreview.net/forum?id=HuP16O5SJf">WebSailor-V2</a> were accepted to <strong>ICLR'2026</strong> ✨
 				</li>
@@ -134,7 +133,7 @@
 				</div>
 				<div class="research-text">
 					<h4><strong>Tongyi DeepResearch: An Open-Source Deep Research Agent</strong></h4>
-					Tongyi DeepResearch is an agentic LLM for long-horizon, deep information-seeking tasks, developed through an end-to-end framework of agentic mid-training and post-training. Upon its release in September 2025, it achieved state-of-the-art performance on deep research benchmarks. I am a core contributor, responsible for the RL training implementation.
+					Tongyi DeepResearch is an open-source agentic LLM for long-horizon, deep information-seeking tasks, trained through an end-to-end framework of agentic mid-training and post-training. Upon its release in September 2025, it matched flagship proprietary deep research systems across major benchmarks and has made a broad impact in the open-source community. I am a core contributor to the RL training implementation.
 					<br/>
 					<div class="links-row">
 						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
@@ -152,7 +151,7 @@
 				</div>
 				<div class="research-text">
 					<h4><strong>WebSailor: Super-human Reasoning for Web Agents</strong></h4>
-					WebSailor instills super-human reasoning into web agents through a complete post-training pipeline: synthesizing high-uncertainty tasks via structured sampling and information obfuscation, an RFT cold start, and agentic RL. It significantly outperforms all open-source agents and matches proprietary ones, and WebSailor-V2 (ICLR'2026) further scales it up.
+					WebSailor equips web agents with super-human reasoning through a complete post-training pipeline: synthesizing high-uncertainty tasks via structured sampling and information obfuscation, followed by RFT cold start and agentic RL. It significantly outperforms open-source agents to match proprietary systems, with <strong>WebSailor-V2 (ICLR'2026)</strong> further scaling up the data and RL pipeline.
 					<br/>
 					<div class="links-row">
 						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
@@ -172,7 +171,8 @@
 				</div>
 				<div class="research-text">
 					<h4><strong>ReSum: Context Summarization for Long-Horizon Reasoning</strong></h4>
-					ReSum studies the use of periodic context summarization to support longer reasoning processes in language systems. It is designed as a lightweight extension with minimal changes to existing ReAct workflows, and shows improved performance on challenging information-seeking benchmarks like BrowseComp and GAIA.
+					ReSum studies the use of periodic context summarization to support longer reasoning processes in language systems. It is designed as a lightweight extension with minimal changes to existing ReAct workflows, and shows improved performance on challenging information-seeking benchmarks like BrowseComp and GAIA.<br/>
+					<em><strong class="highlight">~150 Citations · Cited by <a href="https://arxiv.org/abs/2602.02276" class="highlight">Kimi-K2.5</a> &amp; <a href="https://arxiv.org/abs/2601.16725" class="highlight">LongCat-Flash-Thinking</a> Technical Reports</strong></em>
 					<br/>
 					<div class="links-row">
 						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
@@ -188,7 +188,7 @@
 				</div>
 				<div class="research-text">
 					<h4><strong>Agent-STAR: RL Recipe for Long-Horizon Tool-Using Agents (EMNLP'2026)</strong></h4>
-					We present a practical RL recipe for long-horizon tool-using agents. Studying 5 design axes on TravelPlanner, we distill 7 key takeaways, and our 7B model achieves a 62.8% success rate, far outperforming GPT-5.
+					Using TravelPlanner as a testbed, we build the STAR post-training pipeline to systematically study 5 RL design axes: reward shaping, model scaling, data composition, algorithm selection, and environmental stability. We distill 7 practical takeaways, such as showing that optimal reward and exploration strategies are scale-dependent. Guided by this recipe, our 7B agent achieves a 62.8% success rate, far outperforming GPT-5.
 					<br/>
 					<div class="links-row">
 						<img src="https://img.shields.io/github/stars/WxxShirley/Agent-STAR" alt="GitHub stars"/>
@@ -204,7 +204,7 @@
 				</div>
 				<div class="research-text">
 					<h4><strong>E-GRPO: Reward Shaping for Search Agents (ICLR'2026)</strong></h4>
-					Outcome-only rewards cannot distinguish informative "near-miss" samples from complete failures. E-GRPO turns entities in synthetic data into a dense entity-aware reward that credits near-misses, consistently outperforming GRPO with fewer tool calls.
+					Outcome-only rewards cannot distinguish informative "near-miss" trajectories from complete failures. E-GRPO repurposes the entities in synthetic data into a dense, entity-aware reward that credits near-misses, consistently outperforming GRPO with fewer tool calls.
 					<br/>
 					<div class="links-row">
 						<a href="https://openreview.net/forum?id=CByVWPpb8T" class="paper-link">[Paper]</a>
@@ -264,7 +264,7 @@
 			<li class="my_item">
 				<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
 				<span><strong>Xixi Wu*</strong>, Kuan Li*, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Xinmiao Yu, Dingchu Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
-				<em>arXiv preprint, 2025. <strong class="highlight">~150 Citations</strong></em><br/>
+				<em>arXiv preprint, 2025. <strong class="highlight">~150 Citations</strong>, <strong class="highlight">Cited by <a href="https://arxiv.org/abs/2602.02276" class="highlight">Kimi-K2.5</a> &amp; <a href="https://arxiv.org/abs/2601.16725" class="highlight">LongCat-Flash-Thinking</a> Technical Reports</strong></em><br/>
 			</li><br/>
 
 			<li class="my_item">
@@ -292,12 +292,12 @@
 			<li class="my_item">
 				<strong><a href="https://arxiv.org/abs/2507.02592" class="title-link">WebSailor: Navigating Super-human Reasoning for Web Agent</a></strong><br/>
 				<span>Kuan Li, Zhongwang Zhang, Huifeng Yin, Liwen Zhang, Litu Ou, Jialong Wu, Wenbiao Yin, Baixuan Li, Zhengwei Tao, Xinyu Wang, Weizhou Shen, Junkai Zhang, Dingchu Zhang, <strong>Xixi Wu</strong>, Yong Jiang, Ming Yan, Pengjun Xie, Fei Huang, and Jingren Zhou</span><br/>
-				<em>arXiv preprint, 2025. <a href="https://huggingface.co/papers/2507.02592" class="highlight"><strong>Huggingface Daily Paper Top-1 🏆</strong></a>, <strong class="highlight">300+ Citations</strong></em><br/>
+				<em>arXiv preprint, 2025. <a href="https://huggingface.co/papers/2507.02592" class="highlight"><strong>HuggingFace Daily Paper Top-1 🏆</strong></a>, <strong class="highlight">300+ Citations</strong> (Extended version <strong><a href="https://openreview.net/forum?id=HuP16O5SJf" class="highlight">WebSailor-V2</a></strong> accepted to <strong>ICLR'2026</strong>)</em><br/>
 			</li><br/>
 
 			<li class="my_item">
 				<strong><a href="https://openreview.net/forum?id=CByVWPpb8T" class="title-link">Repurposing Synthetic Data for Fine-grained Search Agent Supervision</a></strong><br/>
-				<span>Yida Zhao, Kuan Li, <strong>Xixi Wu</strong>, Liwen Zhang, Dingchu Zhang, Baixuan Li, Maojia Song, Zhuo Chen, Chenxi Wang, Xinyu Wang, Kewei Tu, Pengjun Xie, Jingren Zhou, and Yong Jiang</span><br/>
+				<span>Yida Zhao, Kuan Li, <strong>Xixi Wu</strong>, Liwen Zhang, Dingchu Zhang, Baixuan Li, Maojia Song, Zhuo Chen, Chenxi Wang, Xinyu Wang, Kewei Tu, Pengjun Xie, Fei Huang, Jingren Zhou, and Yong Jiang</span><br/>
 				<em>Proceedings of the International Conference on Learning Representations (<strong>ICLR</strong>), 2026</em><br/>
 			</li><br/>
 
@@ -408,7 +408,7 @@
 				<div><p>
 					<strong> Google DeepMind </strong><br/>
 					<em>Student Researcher</em>
-					<span class="date">Jun. 2026 - </span><br/>
+					<span class="date">Jun. 2026 - Present</span><br/>
 					<span class="location">Mountain View, CA, USA</span><br/><br/>
 				</p></div>
 			</li>
@@ -445,7 +445,7 @@
 			</li>
 			<li>
 				Second Class Scholarship for Outstanding Student, Fudan University
-				<span class="date">2018 & 2021</span>
+				<span class="date">2018 &amp; 2021</span>
 			</li>
 			<li>
 				Second Prize of Undergraduate Mathematical Contest in Modeling, Shanghai, China (CUMCM)
@@ -482,7 +482,7 @@
 
 				<li>I enjoy swimming 🏊, running 🏃, and cooking Chinese food 🍳 </li>
 
-				<li>I love traveling and collecting favorite places along the way — Yangmingshan in Taipei is my favorite hike so far 🏔️
+				<li>I love traveling and exploring new trails; Yangmingshan in Taipei is my favorite hike so far 🏔️
 					<div class="gallery">
 						<div class="gallery-item">
 							<img src="images/places/kyoto.jpeg" alt="Kyoto">
@@ -512,18 +512,17 @@
 				</li>
 
 				<li>
-					Curiosity keeps me moving — both in research and in life ✨
+					Curiosity keeps me moving, both in research and in life ✨
 				</li>
 
 				<li>
 					<a href="#" class="js-toggle" data-target="#apps-box"
 						data-show-text="[Show my undergrad app projects]" data-hide-text="[Hide my undergrad app projects]">[Show my undergrad app projects]</a>
 					<div id="apps-box" class="apps-box" hidden>
-						During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
+						During my undergraduate studies, I was interested in mobile app development (you can find all the source code on my GitHub):
 						<table>
 							<tr>
 								<td>
-									<img src="images/project/lose-weight.png" width="60" alt="Lose Weight screenshot">
 									<img src="images/project/lose-weight.png" width="60" alt="Lose Weight screenshot">
 									<p><em><strong><a href="https://github.com/WxxShirley/LoseWeight" class="title-link">Lose Weight</a></strong>, a Flutter App</em></p>
 								</td>
@@ -547,7 +546,7 @@
 </div> <!-- #main -->
 
 <div class="site-footer">
-	Last updated at Oct 22, 2026 by Xixi
+	Last updated on Oct. 22, 2026 by Xixi
 </div>
 
 </div> <!-- #inner-page -->
