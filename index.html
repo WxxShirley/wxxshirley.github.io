@@ -55,8 +55,14 @@
 				<br/>
 			</p>
 			<p>
-				My research focuses on <strong>building autonomous agents capable of long-horizon reasoning, planning, and deep information-seeking</strong>, with an emphasis on reinforcement learning for search and tool-use agents. Before working on language agents, I conducted research on graph learning, including community detection and recommendation.
+				My research focuses on <strong>building autonomous agents capable of long-horizon reasoning and execution, and ultimately self-evolution</strong>, with an emphasis on <strong>agentic post-training</strong>, particularly reinforcement learning, to empower these capabilities.
+				Before working on language agents, I conducted research on graph learning, including community detection and recommendation.
 			</p>
+			<div class="job-callout">
+				<i class="fa fa-briefcase"></i>
+				I am open to both <strong>full-time Research Scientist</strong> and <strong>Research Scientist Intern</strong> positions starting <strong>Summer 2027</strong> in the <strong>US&nbsp;/&nbsp;Singapore</strong>.
+				Please feel free to contact me if you think I would be a good fit!
+			</div>
 		</div>
 	</div>
 
@@ -65,6 +71,10 @@
 		<div class="news-container col-md-12 text-left">
 			<h3>Recent News</h3>
 			<ul>
+				<li>
+					<span class="news-date">[Aug 2026]</span>
+					Our paper <a href="https://arxiv.org/abs/2603.21972">Agent-STAR</a> was accepted to <strong>EMNLP'2026 Findings</strong> 🎉
+				</li>
 				<li>
 					<span class="news-date">[Jun 2026]</span>
 					I joined <strong>Google DeepMind</strong> as a Student Researcher 🚀
@@ -77,27 +87,29 @@
 					<span class="news-date">[Mar 2026]</span>
 					Our paper <a href="https://arxiv.org/abs/2603.21972">Agent-STAR</a> is out on arXiv, a practical training recipe for long-horizon tool-using agents [<a href="https://github.com/WxxShirley/Agent-STAR">Code</a>]
 				</li>
-				<li>
+				<li class="news-more" hidden>
 					<span class="news-date">[Feb 2026]</span>
 					Our paper <a href="https://arxiv.org/abs/2510.23458">BrowseConf</a> was accepted to <strong>ACL'2026 Findings</strong> 🎉
 				</li>
-				<li>
+				<li class="news-more" hidden>
 					<span class="news-date">[Jan 2026]</span>
 					Our papers <a href="https://openreview.net/forum?id=CByVWPpb8T">E-GRPO</a> and <a href="https://openreview.net/forum?id=HuP16O5SJf">WebSailor-V2</a> were accepted to <strong>ICLR'2026</strong> ✨
 				</li>
-				<li>
+				<li class="news-more" hidden>
 					<span class="news-date">[Aug 2025]</span>
 					Our paper <a href="https://github.com/WxxShirley/MoLoRAG">MoLoRAG</a> was accepted to <strong>EMNLP'2025</strong>. See you in Suzhou ✨
 				</li>
-				<li>
+				<li class="news-more" hidden>
 					<span class="news-date">[May 2025]</span>
 					Our paper <a href="https://llmnodebed.github.io/">LLMNodeBed</a> was accepted to <strong>ICML'2025</strong>. See you in Vancouver again 😄
 				</li>
-				<li>
+				<li class="news-more" hidden>
 					<span class="news-date">[Nov 2024]</span>
 					I was awarded <a href="https://neurips.cc/Conferences/2024/ProgramCommittee">NeurIPS'2024 Top Reviewer</a> 🥳
 				</li>
 			</ul>
+			<a href="#" class="js-toggle news-toggle" data-target=".news-more"
+				data-show-text="[Show more news]" data-hide-text="[Show less]">[Show more news]</a>
 		</div>
 	</div>
 	<br/>
@@ -107,67 +119,168 @@
 		<div class="col-md-12 text-left">
 			<h2>Research Highlights</h2>
 		</div>
-		<ul class="my_table">
+
+		<div class="tab-bar" role="tablist">
+			<button type="button" class="tab active" role="tab" aria-selected="true" data-tab="tab-dr">Deep Research Agents</button>
+			<button type="button" class="tab" role="tab" aria-selected="false" data-tab="tab-rl">Agentic Post-Training</button>
+			<button type="button" class="tab" role="tab" aria-selected="false" data-tab="tab-graph">Bridging LLMs and Structured Reasoning</button>
+		</div>
+
+		<!-- Tab: Deep Research Agents -->
+		<ul class="my_table tab-panel" id="tab-dr" role="tabpanel">
 			<li class="my_item">
 				<div>
-					<img src="images/research/resum.jpg" height="140" alt="ReSum overview" class="img_research"/>
+					<img src="images/research/tongyi_dr.jpg" alt="Tongyi DeepResearch benchmark results" class="img_research img-pad-sm"/>
 				</div>
-				<h4><strong>ReSum: Context Summarization for Long-Horizon Reasoning</strong></h4>
-				ReSum studies the use of periodic context summarization to support longer reasoning processes in language systems. It is designed as a lightweight extension with minimal changes to existing ReAct workflows, and shows improved performance on challenging information-seeking benchmarks like BrowseComp and GAIA.
-				<br/>
-				<div class="links-row">
-					<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
-					<a href="https://arxiv.org/abs/2509.13313" class="paper-link">[Paper]</a>
-					<a href="https://github.com/Alibaba-NLP/DeepResearch/tree/main/WebAgent/WebResummer" class="code-link">[Code]</a>
+				<div class="research-text">
+					<h4><strong>Tongyi DeepResearch: An Open-Source Deep Research Agent</strong></h4>
+					Tongyi DeepResearch is an agentic LLM for long-horizon, deep information-seeking tasks, developed through an end-to-end framework of agentic mid-training and post-training. Upon its release in September 2025, it achieved state-of-the-art performance on deep research benchmarks. I am a core contributor, responsible for the RL training implementation.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
+						<a href="https://arxiv.org/abs/2510.24701" class="paper-link">[Paper]</a>
+						<a href="https://github.com/Alibaba-NLP/DeepResearch" class="code-link">[Code]</a>
+						<a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B" class="slides-link">[Model]</a>
+						<a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" class="blog-link">[Blog]</a>
+					</div>
 				</div>
 			</li><br/>
 
 			<li class="my_item">
 				<div>
-					<img src="images/research/nodebed_poster.png" height="180" alt="LLMNodeBed poster" class="img_research"/>
+					<img src="images/research/websailor.jpg" alt="WebSailor-V2 overview" class="img_research"/>
 				</div>
-				<h4><strong>LLMNodeBed: Benchmarking LLMs for Node Classification (ICML'2025)</strong></h4>
-				We introduce LLMNodeBed, a PyG-based testbed for LLM-based node classification algorithms. It integrates 14 datasets, supports 8 LLM-based and 8 classic methods, and covers 3 learning configurations.
-				With LLMNodeBed, we train and evaluate over 2,700 models to analyze the effects of factors like LLM type and size, prompt, learning paradigm, and dataset homophily. Our study reveals 8 key insights, including (1) optimal settings for each algorithm category, and (2) scenarios where LLMs significantly outperform LMs.
-				<br/>
-				<div class="links-row">
-					<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" alt="GitHub stars"/>
-					<a href="https://openreview.net/forum?id=O3WqAhxuc7" class="paper-link">[Paper]</a>
-					<a href="https://github.com/WxxShirley/LLMNodeBed" class="code-link">[Code]</a>
-					<a href="slides/ICML2025NodeBed.pdf" class="slides-link">[Poster]</a>
-					<a href="https://zhuanlan.zhihu.com/p/1913536056717967976" class="blog-link">[Blog]</a>
+				<div class="research-text">
+					<h4><strong>WebSailor: Super-human Reasoning for Web Agents</strong></h4>
+					WebSailor instills super-human reasoning into web agents through a complete post-training pipeline: synthesizing high-uncertainty tasks via structured sampling and information obfuscation, an RFT cold start, and agentic RL. It significantly outperforms all open-source agents and matches proprietary ones, and WebSailor-V2 (ICLR'2026) further scales it up.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
+						<a href="https://arxiv.org/abs/2507.02592" class="paper-link">[Paper]</a>
+						<a href="https://openreview.net/forum?id=HuP16O5SJf" class="paper-link">[Paper (V2)]</a>
+						<a href="https://github.com/Alibaba-NLP/DeepResearch/tree/main/WebAgent/WebSailor" class="code-link">[Code]</a>
+					</div>
+				</div>
+			</li><br/>
+		</ul>
+
+		<!-- Tab: Agentic Post-Training -->
+		<ul class="my_table tab-panel" id="tab-rl" role="tabpanel" hidden>
+			<li class="my_item">
+				<div>
+					<img src="images/research/resum.jpg" alt="ReSum overview" class="img_research"/>
+				</div>
+				<div class="research-text">
+					<h4><strong>ReSum: Context Summarization for Long-Horizon Reasoning</strong></h4>
+					ReSum studies the use of periodic context summarization to support longer reasoning processes in language systems. It is designed as a lightweight extension with minimal changes to existing ReAct workflows, and shows improved performance on challenging information-seeking benchmarks like BrowseComp and GAIA.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
+						<a href="https://arxiv.org/abs/2509.13313" class="paper-link">[Paper]</a>
+						<a href="https://github.com/Alibaba-NLP/DeepResearch/tree/main/WebAgent/WebResummer" class="code-link">[Code]</a>
+					</div>
 				</div>
 			</li><br/>
 
 			<li class="my_item">
 				<div>
-					<img src="images/research/taskplan_poster.png" height="180" alt="GNN4TaskPlan poster" class="img_research"/>
+					<img src="images/research/agent_star.jpg" alt="Agent-STAR pipeline" class="img_research img-pad"/>
 				</div>
-				<h4><strong>Graph Learning for Task Planning (NeurIPS'2024)</strong></h4>
-				In language agents, available tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Under such context, task planning involves selecting a path within this graph to fulfill user requests.
-				We find that the bottleneck in LLMs' planning abilities lies in their limited understanding of the task graph. Therefore, we introduce GNNs as a simple fix, available in both training-free and training-required variants. Extensive experiments demonstrate that GNN-based methods surpass existing solutions even without training.
-				<br/>
-				<div class="links-row">
-					<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" alt="GitHub stars"/>
-					<a href="https://neurips.cc/virtual/2024/poster/94464" class="paper-link">[Paper]</a>
-					<a href="https://github.com/WxxShirley/GNN4TaskPlan" class="code-link">[Code]</a>
-					<a href="slides/NIPS2024Plan.pdf" class="slides-link">[Poster]</a>
-					<a href="https://zhuanlan.zhihu.com/p/936340518" class="blog-link">[Blog]</a>
+				<div class="research-text">
+					<h4><strong>Agent-STAR: RL Recipe for Long-Horizon Tool-Using Agents (EMNLP'2026)</strong></h4>
+					We present a practical RL recipe for long-horizon tool-using agents. Studying 5 design axes on TravelPlanner, we distill 7 key takeaways, and our 7B model achieves a 62.8% success rate, far outperforming GPT-5.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/WxxShirley/Agent-STAR" alt="GitHub stars"/>
+						<a href="https://arxiv.org/abs/2603.21972" class="paper-link">[Paper]</a>
+						<a href="https://github.com/WxxShirley/Agent-STAR" class="code-link">[Code]</a>
+					</div>
+				</div>
+			</li><br/>
+
+			<li class="my_item">
+				<div>
+					<img src="images/research/egrpo.jpg" alt="E-GRPO overview" class="img_research img-pad"/>
+				</div>
+				<div class="research-text">
+					<h4><strong>E-GRPO: Reward Shaping for Search Agents (ICLR'2026)</strong></h4>
+					Outcome-only rewards cannot distinguish informative "near-miss" samples from complete failures. E-GRPO turns entities in synthetic data into a dense entity-aware reward that credits near-misses, consistently outperforming GRPO with fewer tool calls.
+					<br/>
+					<div class="links-row">
+						<a href="https://openreview.net/forum?id=CByVWPpb8T" class="paper-link">[Paper]</a>
+					</div>
+				</div>
+			</li><br/>
+		</ul>
+
+		<!-- Tab: Bridging LLMs and Structured Reasoning -->
+		<ul class="my_table tab-panel" id="tab-graph" role="tabpanel" hidden>
+			<li class="my_item">
+				<div>
+					<img src="images/research/nodebed_poster.png" alt="LLMNodeBed poster" class="img_research"/>
+				</div>
+				<div class="research-text">
+					<h4><strong>LLMNodeBed: Benchmarking LLMs for Node Classification (ICML'2025)</strong></h4>
+					We introduce LLMNodeBed, a PyG-based testbed for LLM-based node classification algorithms. It integrates 14 datasets, supports 8 LLM-based and 8 classic methods, and covers 3 learning configurations.
+					With LLMNodeBed, we train and evaluate over 2,700 models to analyze the effects of factors like LLM type and size, prompt, learning paradigm, and dataset homophily. Our study reveals 8 key insights, including (1) optimal settings for each algorithm category, and (2) scenarios where LLMs significantly outperform LMs.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" alt="GitHub stars"/>
+						<a href="https://openreview.net/forum?id=O3WqAhxuc7" class="paper-link">[Paper]</a>
+						<a href="https://github.com/WxxShirley/LLMNodeBed" class="code-link">[Code]</a>
+						<a href="slides/ICML2025NodeBed.pdf" class="slides-link">[Poster]</a>
+						<a href="https://zhuanlan.zhihu.com/p/1913536056717967976" class="blog-link">[Blog]</a>
+					</div>
+				</div>
+			</li><br/>
+
+			<li class="my_item">
+				<div>
+					<img src="images/research/taskplan_poster.png" alt="GNN4TaskPlan poster" class="img_research"/>
+				</div>
+				<div class="research-text">
+					<h4><strong>Graph Learning for Task Planning (NeurIPS'2024)</strong></h4>
+					In language agents, available tasks naturally form a task graph, where nodes represent tasks and edges denote dependencies. Under such context, task planning involves selecting a path within this graph to fulfill user requests.
+					We find that the bottleneck in LLMs' planning abilities lies in their limited understanding of the task graph. Therefore, we introduce GNNs as a simple fix, available in both training-free and training-required variants. Extensive experiments demonstrate that GNN-based methods surpass existing solutions even without training.
+					<br/>
+					<div class="links-row">
+						<img src="https://img.shields.io/github/stars/WxxShirley/GNN4TaskPlan" alt="GitHub stars"/>
+						<a href="https://neurips.cc/virtual/2024/poster/94464" class="paper-link">[Paper]</a>
+						<a href="https://github.com/WxxShirley/GNN4TaskPlan" class="code-link">[Code]</a>
+						<a href="slides/NIPS2024Plan.pdf" class="slides-link">[Poster]</a>
+						<a href="https://zhuanlan.zhihu.com/p/936340518" class="blog-link">[Blog]</a>
+					</div>
 				</div>
 			</li><br/>
 		</ul>
 	</div><br/>
 
-	<!-- ==================== Technical Reports ==================== -->
+	<!-- ==================== Publications ==================== -->
 	<div class="row row-thin">
 		<div class="col-md-12 text-left">
-			<h2>Technical Reports</h2>
+			<h2>Selected Publications</h2>
 		</div>
 		<ul class="my_table">
 			<li class="my_item">
+				<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
+				<span><strong>Xixi Wu*</strong>, Kuan Li*, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Xinmiao Yu, Dingchu Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
+				<em>arXiv preprint, 2025. <strong class="highlight">~150 Citations</strong></em><br/>
+			</li><br/>
+
+			<li class="my_item">
+				<strong><a href="https://arxiv.org/abs/2603.21972" class="title-link">Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe</a></strong><br/>
+				<span><strong>Xixi Wu</strong>, Qianguo Sun, Ruiyang Zhang, Chao Song, Junlong Wu, Yiyan Qi, and Hong Cheng</span><br/>
+				<em>Findings of the Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>), 2026</em><br/>
+				<div class="links-row">
+					<img src="https://img.shields.io/github/stars/WxxShirley/Agent-STAR" alt="GitHub stars"/>
+					<a href="https://github.com/WxxShirley/Agent-STAR" class="code-link badge-link">[Code]</a>
+				</div>
+			</li><br/>
+
+			<li class="my_item">
 				<strong><a href="https://arxiv.org/abs/2510.24701" class="title-link">Tongyi DeepResearch Technical Report</a></strong><br/>
-				<span>Tongyi DeepResearch Team (<strong>Xixi Wu</strong> contributed to RL training implementation for Tongyi DeepResearch models)</span><br/>
-				<em>arXiv preprint, 2025. <strong class="highlight">100+ Citations</strong></em><br/>
+				<span>Tongyi DeepResearch Team (<strong>Xixi Wu</strong> is a core contributor, responsible for the RL training implementation)</span><br/>
+				<em>arXiv preprint, 2025. <strong class="highlight">200+ Citations</strong></em><br/>
 				<div class="links-row">
 					<img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch" alt="GitHub stars"/>
 					<a href="https://github.com/Alibaba-NLP/DeepResearch" class="code-link badge-link">[Code]</a>
@@ -179,37 +292,7 @@
 			<li class="my_item">
 				<strong><a href="https://arxiv.org/abs/2507.02592" class="title-link">WebSailor: Navigating Super-human Reasoning for Web Agent</a></strong><br/>
 				<span>Kuan Li, Zhongwang Zhang, Huifeng Yin, Liwen Zhang, Litu Ou, Jialong Wu, Wenbiao Yin, Baixuan Li, Zhengwei Tao, Xinyu Wang, Weizhou Shen, Junkai Zhang, Dingchu Zhang, <strong>Xixi Wu</strong>, Yong Jiang, Ming Yan, Pengjun Xie, Fei Huang, and Jingren Zhou</span><br/>
-				<em>arXiv preprint, 2025. <a href="https://huggingface.co/papers/2507.02592" class="highlight"><strong>Huggingface Daily Paper Top-1 🏆</strong></a>, <strong class="highlight">200+ Citations</strong></em><br/>
-			</li><br/>
-		</ul>
-	</div>
-
-	<!-- ==================== Publications ==================== -->
-	<div class="row row-thin">
-		<div class="col-md-12 text-left">
-			<h2>Selected Publications</h2>
-		</div>
-		<ul class="my_table">
-			<li class="my_item">
-				<strong><a href="https://arxiv.org/abs/2603.21972" class="title-link">Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe</a></strong><br/>
-				<span><strong>Xixi Wu</strong>, Qianguo Sun, Ruiyang Zhang, Chao Song, Junlong Wu, Yiyan Qi, and Hong Cheng</span><br/>
-				<em>arXiv preprint, 2026</em><br/>
-				<div class="links-row">
-					<img src="https://img.shields.io/github/stars/WxxShirley/Agent-STAR" alt="GitHub stars"/>
-					<a href="https://github.com/WxxShirley/Agent-STAR" class="code-link badge-link">[Code]</a>
-				</div>
-			</li><br/>
-
-			<li class="my_item">
-				<strong><a href="https://arxiv.org/abs/2510.23458" class="title-link">BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents</a></strong><br/>
-				<span>Litu Ou, Kuan Li, Huifeng Yin, Liwen Zhang, Zhongwang Zhang, <strong>Xixi Wu</strong>, Rui Ye, Zile Qiao, Pengjun Xie, Jingren Zhou, and Yong Jiang</span><br/>
-				<em>Findings of the Association for Computational Linguistics (<strong>ACL</strong>), 2026</em><br/>
-			</li><br/>
-
-			<li class="my_item">
-				<strong><a href="https://arxiv.org/abs/2509.13313" class="title-link">ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization</a></strong><br/>
-				<span><strong>Xixi Wu*</strong>, Kuan Li*, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Xinmiao Yu, Dingchu Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, and Jingren Zhou</span><br/>
-				<em>arXiv preprint, 2025. <strong class="highlight">~80 Citations</strong></em><br/>
+				<em>arXiv preprint, 2025. <a href="https://huggingface.co/papers/2507.02592" class="highlight"><strong>Huggingface Daily Paper Top-1 🏆</strong></a>, <strong class="highlight">300+ Citations</strong></em><br/>
 			</li><br/>
 
 			<li class="my_item">
@@ -219,12 +302,18 @@
 			</li><br/>
 
 			<li class="my_item">
+				<strong><a href="https://arxiv.org/abs/2510.23458" class="title-link">BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents</a></strong><br/>
+				<span>Litu Ou, Kuan Li, Huifeng Yin, Liwen Zhang, Zhongwang Zhang, <strong>Xixi Wu</strong>, Rui Ye, Zile Qiao, Pengjun Xie, Jingren Zhou, and Yong Jiang</span><br/>
+				<em>Findings of the Association for Computational Linguistics (<strong>ACL</strong>), 2026</em><br/>
+			</li><br/>
+
+			<li class="my_item">
 				<strong><a href="https://arxiv.org/abs/2509.07666" class="title-link">MoLoRAG: Bootstrapping Document Understanding via Multi-modal Logic-aware Retrieval</a></strong><br/>
 				<span><strong>Xixi Wu</strong>, Yanchao Tan, Nan Hou, Ruiyang Zhang, and Hong Cheng</span><br/>
 				<em>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>), 2025</em><br/>
 				<div class="links-row">
 					<img src="https://img.shields.io/github/stars/WxxShirley/MoLoRAG" alt="GitHub stars"/>
-					<a href="https://github.com/WxxShirley/MoLoRAG/" class="code-link badge-link">[Code]</a>
+					<a href="https://github.com/WxxShirley/MoLoRAG" class="code-link badge-link">[Code]</a>
 					<a href="slides/EMNLP2025MoLoRAG.pdf" class="slides-link">[Poster]</a>
 				</div>
 			</li><br/>
@@ -235,7 +324,7 @@
 				<em>Proceedings of the 42nd International Conference on Machine Learning (<strong>ICML</strong>), 2025</em><br/>
 				<div class="links-row">
 					<img src="https://img.shields.io/github/stars/WxxShirley/LLMNodeBed" alt="GitHub stars"/>
-					<a href="https://github.com/WxxShirley/LLMNodeBed/" class="code-link">[Code]</a>
+					<a href="https://github.com/WxxShirley/LLMNodeBed" class="code-link">[Code]</a>
 					<a href="slides/ICML2025NodeBed.pdf" class="slides-link">[Poster]</a>
 					<a href="https://llmnodebed.github.io/" class="blog-link">[Project Page]</a>
 				</div>
@@ -255,7 +344,7 @@
 		</ul>
 
 		<div class="col-md-12 text-left toggle-row">
-			<a href="#" class="js-toggle" data-target="more-pubs-list"
+			<a href="#" class="js-toggle" data-target="#more-pubs-list"
 				data-show-text="[Show all publications]" data-hide-text="[Show fewer publications]">[Show all publications]</a>
 		</div>
 
@@ -427,7 +516,7 @@
 				</li>
 
 				<li>
-					<a href="#" class="js-toggle" data-target="apps-box"
+					<a href="#" class="js-toggle" data-target="#apps-box"
 						data-show-text="[Show my undergrad app projects]" data-hide-text="[Hide my undergrad app projects]">[Show my undergrad app projects]</a>
 					<div id="apps-box" class="apps-box" hidden>
 						During my undergraduate studies, I was interested in mobile app development (You can find all the source codes on my GitHub):
@@ -458,20 +547,34 @@
 </div> <!-- #main -->
 
 <div class="site-footer">
-	Last updated at Jul 1, 2026 by Xixi
+	Last updated at Oct 22, 2026 by Xixi
 </div>
 
 </div> <!-- #inner-page -->
 </div> <!-- #page -->
 
 <script>
-	// Expand/collapse: <a class="js-toggle" data-target="id" data-show-text data-hide-text>
+	// Expand/collapse: <a class="js-toggle" data-target="css selector" data-show-text data-hide-text>
 	document.querySelectorAll('.js-toggle').forEach(function (link) {
 		link.addEventListener('click', function (e) {
 			e.preventDefault();
-			var target = document.getElementById(link.dataset.target);
-			target.hidden = !target.hidden;
-			link.textContent = target.hidden ? link.dataset.showText : link.dataset.hideText;
+			var targets = document.querySelectorAll(link.dataset.target);
+			var show = targets[0].hidden;
+			targets.forEach(function (t) { t.hidden = !show; });
+			link.textContent = show ? link.dataset.hideText : link.dataset.showText;
+		});
+	});
+
+	// Tabs: <button class="tab" data-tab="panel-id"> switches between sibling .tab-panel lists
+	document.querySelectorAll('.tab').forEach(function (tab) {
+		tab.addEventListener('click', function () {
+			tab.parentNode.querySelectorAll('.tab').forEach(function (t) {
+				var active = t === tab;
+				t.classList.toggle('active', active);
+				t.setAttribute('aria-selected', active);
+				document.getElementById(t.dataset.tab).hidden = !active;
+			});
+			tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
 		});
 	});
 </script>

@@ -66,6 +66,21 @@ body {
 	margin: 0;
 }
 
+/* ---------- Job market callout ---------- */
+
+.job-callout {
+	margin: 4px 0 6px 0;
+	padding: 12px 16px;
+	background-color: #fff1f0;
+	border-left: 4px solid #e57373;
+	border-radius: 6px;
+}
+
+.job-callout .fa {
+	margin-right: 4px;
+	color: #d32f2f;
+}
+
 /* ---------- News ---------- */
 
 .news-container {
@@ -100,6 +115,12 @@ body {
 	color: #555;
 }
 
+.news-container a.news-toggle {
+	display: inline-block;
+	margin-top: 6px;
+	text-decoration: none;
+}
+
 /* ---------- Research highlights & publications ---------- */
 
 ul.my_table {
@@ -121,9 +142,64 @@ li.my_item img {
 .img_research {
 	float: left;
 	width: 320px;
+	height: auto;
+	background-color: #ffffff;
 	margin-left: 10px;
 	margin-top: 5px;
 	box-shadow: 0px 2px 8px #aaa;
+}
+
+li.my_item img.img_research {
+	margin-right: 20px;
+}
+
+/* white space above and below short, wide figures */
+li.my_item img.img-pad-sm {
+	padding: 12px 0;
+}
+
+li.my_item img.img-pad {
+	padding: 24px 0;
+}
+
+/* research highlight tabs */
+.tab-bar {
+	clear: both;
+	display: flex;
+	gap: 6px;
+	margin: 0 0 18px 15px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.tab {
+	padding: 8px 14px;
+	font: inherit;
+	color: #555;
+	background: none;
+	border: none;
+	border-bottom: 3px solid transparent;
+	margin-bottom: -1px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.tab:hover {
+	color: #0056b3;
+}
+
+.tab.active {
+	color: #0056b3;
+	font-weight: bold;
+	border-bottom-color: #0056b3;
+}
+
+/* keep text in its own column next to the image */
+.research-text {
+	overflow: hidden;
+}
+
+.research-text h4 {
+	margin-top: 5px;
 }
 
 .links-row {
@@ -330,11 +406,24 @@ li.my_item .exp-logo.exp-logo-low {
 		display: block;
 	}
 
+	/* all news are swipeable on mobile, so no folding */
+	.news-container li.news-more {
+		display: block;
+	}
+
+	.news-container a.news-toggle {
+		display: none;
+	}
+
 	ul.my_table {
 		padding-left: 0;
 	}
 
-	.img_research {
+	.research-text {
+		overflow: visible;
+	}
+
+	li.my_item img.img_research {
 		float: none;
 		width: 100%;
 		height: auto;
@@ -343,6 +432,16 @@ li.my_item .exp-logo.exp-logo-low {
 
 	.links-row {
 		flex-wrap: wrap;
+	}
+
+	.tab-bar {
+		margin-left: 0;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.tab {
+		padding: 8px 10px;
 	}
 
 	.exp-list li.my_item {
