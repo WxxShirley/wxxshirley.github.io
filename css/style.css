@@ -264,40 +264,70 @@ li.my_item .exp-logo.exp-logo-low {
 		font-size: 26px;
 	}
 
-	.header {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
 	.header-info {
 		float: none;
-		text-align: center;
+		font-size: 14px;
 	}
 
 	.header-photo {
-		float: none;
-		margin-bottom: 12px;
+		margin-left: 12px;
 	}
 
 	.header-photo img {
-		float: none;
 		width: 100px;
 		height: auto;
 	}
 
 	.header-name {
-		font-size: 36px;
+		font-size: 30px;
 	}
 
 	.header-name-cn {
-		font-size: 22px;
+		font-size: 18px;
+	}
+
+	/* icon-only contact row */
+	.contact-links {
+		clear: both;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 6px;
+		font-size: 24px;
+	}
+
+	.contact-links .contact-label,
+	.contact-links .sep {
+		display: none;
 	}
 
 	.news-container {
 		float: none;
 		margin: 10px 0;
-		padding: 14px;
+		padding: 14px 0 14px 14px;
+	}
+
+	/* news as horizontally swipeable cards */
+	.news-container ul {
+		display: flex;
+		gap: 10px;
+		margin: 0;
+		padding: 0 14px 6px 0;
+		list-style: none;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.news-container li {
+		flex: 0 0 78%;
+		padding: 10px 12px;
+		background-color: #ffffff;
+		border-radius: 8px;
+		scroll-snap-align: start;
+	}
+
+	.news-date {
+		display: block;
 	}
 
 	ul.my_table {
